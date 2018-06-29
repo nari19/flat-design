@@ -1,18 +1,15 @@
-x = 3
-y = 5
+def ip(t, *args):
+    for i in args:
+        t += [input(i)]
+    return t
 
-x1 = "x=" + str(int(x * 200 / 10))
-y1 = "y=" + str(int(y * 280 / 10))
 
-print(x1)
-print(y1)
+# x = 3
+# y = 5
 
-def Iput(x, t):
-    for i in [x]:
-        t += [input(x)]
+# x1 = "x=" + str(int(x * 200 / 10))
+# y1 = "y=" + str(int(y * 280 / 10))
 
-t = []
-Iput("", t)
-Iput("r= ; ", t)
-Iput("fill= ; ", t)
-print(t)
+# print(x1)
+# print(y1)
+

@@ -1,7 +1,7 @@
-t = [input("file name; ")]
-t += [input("1:vertical 2:oblong 3:square; ")]
-t += [input("background; ")]
-t += [input("add new? y/n; ")]
+import funcs as fu
+t = []
+fu.ip(t, "file name; ", "1:vertical 2:oblong 3:square; ", "background; ", "add new? y/n; ")
+print(t)
 while t[-1] == "y":
     t += [input("1:rect 2:circle 3:text 4:path; ")]
     if t[-1] == "1":
@@ -36,7 +36,7 @@ while t[-1] == "y":
         break
     t += [input("add new? y/n; ")]
 
-print("end")
+
 print(t)
 
 
