@@ -1,4 +1,4 @@
-# import write
+import write
 import funcs as fu
 t = []
 fu.ip(t, "file name; ", "1:vertical 2:oblong 3:square; ", "background; ", "add new? y/n; ")
@@ -19,9 +19,9 @@ while t[-1] == "y":
         fu.ip(t, "d= ; ", "fill= ; ")
     else :
         break
+    # write.wr(t)   #要素を追加するごとにファイルを上書き
     t += [input("add new? y/n; ")]
 
 print(t)
 # write.wr(t)
-
 

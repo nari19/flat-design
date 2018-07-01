@@ -4,7 +4,12 @@ def ip(t, *args):
         t += [input(i)]
     return t
 
-
+# source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
+# 関数化
+def rp(*args):
+    for i in args:
+        sourse += tag.replace(i, t[p+=1])
+    return source
 
 # x = 3
 # y = 5
