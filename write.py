@@ -12,26 +12,29 @@ def wr(t):
         source = source.replace("aaaaa", "0 0 300 300")
     # background-color
     source = source.replace("bbbbb", t[2])
+
     # add new
-    for i in range(t.count('y')):
-        if t[i] == "1":     #rect
+    ty = [u for u, x in enumerate(t) if x == "y"]#add newした時のインデックスを配列化
+    for i in range(len(ty)):
+        p = ty[i] + 1   #タグの種類を指定する時のインデックス
+        if t[p] == "1":     #rect
             tag = '<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>'
-            source += tag.replace("", )
-        elif t[i] == "2":     #circle
+            source += tag.replace("ccccc", t[])
+        elif t[p] == "2":     #circle
             tag = '<circle cx="ccccc" cy="ddddd" r="eeeee" fill="fffff" />'
-            source += tag.replace("", )
-        elif t[i] == "3":     #text
+            source += tag.replace("ccccc", )
+        elif t[p] == "3":     #text
             tag = '<text x="ccccc" y="ddddd" font-family="eeeee" font-size="fffff">ggggg</text>'
             source += tag.replace("", )
-        elif t[i] == "4":     #path
+        elif t[p] == "4":     #path
             tag = '<path d="ccccc" fill="ddddd"/>'
             source += tag.replace("", )
         else:
-
-        
+            break
 
     # close tag
     source += "</svg>"
+    # 書き出し
     f.write(source)
     f.flush()
     f.close()
