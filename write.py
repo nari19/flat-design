@@ -13,25 +13,19 @@ def wr(t):
     # background-color
     source = source.replace("bbbbb", t[2])
     # add new
-    i = 3
-    while t[i] = "y" 
-        i += 1
+    for i in range(t.count('y')):
         if t[i] == "1":     #rect
-            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            tag = '<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>'
             source += tag.replace("", )
-            i +=  6
         elif t[i] == "2":     #circle
-            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            tag = '<circle cx="ccccc" cy="ddddd" r="eeeee" fill="fffff" />'
             source += tag.replace("", )
-            i +=  6
         elif t[i] == "3":     #text
-            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            tag = '<text x="ccccc" y="ddddd" font-family="eeeee" font-size="fffff">ggggg</text>'
             source += tag.replace("", )
-            i +=  6
         elif t[i] == "4":     #path
-            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            tag = '<path d="ccccc" fill="ddddd"/>'
             source += tag.replace("", )
-            i +=  6
         else:
 
         

@@ -1,3 +1,4 @@
+#複数のinput関数を同時に呼び出す
 def ip(t, *args):
     for i in args:
         t += [input(i)]
