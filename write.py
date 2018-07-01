@@ -13,13 +13,28 @@ def wr(t):
     # background-color
     source = source.replace("bbbbb", t[2])
     # add new
-    while t[3] == "y":   #(t配列の中にyがある数)回繰り返す
-        #yの次の数が1,2,3,4のどれなのかを判定
-            #1の場合    tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
-        #               source += tag.replace("", )
-            #2の場合
-            #3の場合
-            #4の場合
+    i = 3
+    while t[i] = "y" 
+        i += 1
+        if t[i] == "1":     #rect
+            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            source += tag.replace("", )
+            i +=  6
+        elif t[i] == "2":     #circle
+            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            source += tag.replace("", )
+            i +=  6
+        elif t[i] == "3":     #text
+            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            source += tag.replace("", )
+            i +=  6
+        elif t[i] == "4":     #path
+            tag = "<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>"
+            source += tag.replace("", )
+            i +=  6
+        else:
+
+        
 
     # close tag
     source += "</svg>"

@@ -1,4 +1,4 @@
-import write
+# import write
 import funcs as fu
 t = []
 fu.ip(t, "file name; ", "1:vertical 2:oblong 3:square; ", "background; ", "add new? y/n; ")
