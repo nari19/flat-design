@@ -1,3 +1,4 @@
+import write
 import funcs as fu
 t = []
 fu.ip(t, "file name; ", "1:vertical 2:oblong 3:square; ", "background; ", "add new? y/n; ")
@@ -21,5 +22,6 @@ while t[-1] == "y":
     t += [input("add new? y/n; ")]
 
 print(t)
+# write.wr(t)
 
 
