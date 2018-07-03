@@ -1,14 +1,15 @@
 #複数のinput関数を同時に呼び出す
-def ip(t, *args):
+def ip(*args):
+    from main import t
     for i in args:
         t += [input(i)]
-    return t
 
 # source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
 # 関数化
 def rp(*args):
+    from .write import wr
     for i in args:
-        sourse += tag.replace(i, t[p+=1])
+        sourse += tag.replace(i, "t[p+=1]")
     return source
 
 # x = 3

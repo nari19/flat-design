@@ -1,5 +1,5 @@
-import funcs as fu
 def wr(t):
+    from funcs import rp
     file_name = "images/" + t[0] + ".svg"
     f = open(file_name, 'w', encoding='utf-8')
     # template
@@ -23,13 +23,13 @@ def wr(t):
             rp("ccccc", "ddddd", "eeeee", "fffff", "ggggg")
         elif t[p] == "2":     #circle
             tag = '<circle cx="ccccc" cy="ddddd" r="eeeee" fill="fffff" />'
-            fu.rp("ccccc", "ddddd", "eeeee", "fffff")
+            rp("ccccc", "ddddd", "eeeee", "fffff")
         elif t[p] == "3":     #text
             tag = '<text x="ccccc" y="ddddd" font-family="eeeee" font-size="fffff">ggggg</text>'
-            fu.rp("ccccc", "ddddd", "eeeee", "fffff", "ggggg")
+            rp("ccccc", "ddddd", "eeeee", "fffff", "ggggg")
         elif t[p] == "4":     #path
             tag = '<path d="ccccc" fill="ddddd"/'
-            fu.rp("ccccc", "ddddd")
+            rp("ccccc", "ddddd")
         else:
             break
 
