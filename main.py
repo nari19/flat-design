@@ -8,6 +8,7 @@ def ip(*args):
         t += [input(i)]
 
 ip("file name; ", "1:vertical 2:oblong 3:square; ", "background; ", "add new? y/n; ")
+# ------------------------------------------------------------------------------------------------
 while t[-1] == "y":
     ip("1:rect 2:circle 3:text 4:path; ")
     print(t)
@@ -24,9 +25,11 @@ while t[-1] == "y":
         # path
         ip("d= ; ", "fill= ; ")
     else :
+        print("not command!")
         break
     wr(t)   #要素を追加するごとにファイルを上書き
-    t += [input("add new? y/n; ")]
+    ip("add new? y/n;")
+# ------------------------------------------------------------------------------------------------
 
 print(t)
 wr(t)

@@ -13,7 +13,7 @@ def wr(t):
     # background-color
     source = source.replace("bbbbb", t[2])
 
-
+    # ------------------------------------------------------------------------------------------------
     # source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
     def rp(tag, p, *args):
         global source
@@ -38,7 +38,8 @@ def wr(t):
             rp(tag, p, "ccccc", "ddddd")
         else:
             break
-
+    # ------------------------------------------------------------------------------------------------
+    
     # close tag
     source += "</svg>"
     # 書き出し
