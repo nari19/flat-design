@@ -1,6 +1,12 @@
 from write import wr
-from funcs import ip
+
 t = []
+#複数のinput関数を同時に呼び出す
+def ip(*args):
+    global t
+    for i in args:
+        t += [input(i)]
+
 ip("file name; ", "1:vertical 2:oblong 3:square; ", "background; ", "add new? y/n; ")
 while t[-1] == "y":
     ip("1:rect 2:circle 3:text 4:path; ")
@@ -19,8 +25,8 @@ while t[-1] == "y":
         ip("d= ; ", "fill= ; ")
     else :
         break
-    # wr(t)   #要素を追加するごとにファイルを上書き
+    wr(t)   #要素を追加するごとにファイルを上書き
     t += [input("add new? y/n; ")]
 
 print(t)
-# wr(t)
+wr(t)
