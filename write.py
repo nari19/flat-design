@@ -13,12 +13,14 @@ def wr(t):
     # background-color
     source = source.replace("bbbbb", t[2])
 
-    # ------------------------------------------------------------------------------------------------
     # source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
     def rp(tag, p, *args):
-        global source
+        # global tag
         for i in args:
-            source += tag.replace(i, t[p+1])
+            # a = tag.replace(i, t[p+1])
+            p += 1
+            tag = tag.replace(i, t[p])
+        return tag
 
     # add new
     ty = [u for u, x in enumerate(t) if x == "y"]#add newした時のインデックスを配列化
@@ -26,20 +28,19 @@ def wr(t):
         p = ty[i] + 1   #タグの種類を指定する時のインデックス
         if t[p] == "1":     #rect
             tag = '<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>'
-            rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff", "ggggg")
+            source += rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff", "ggggg")
         elif t[p] == "2":     #circle
             tag = '<circle cx="ccccc" cy="ddddd" r="eeeee" fill="fffff" />'
-            rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff")
+            source += rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff")
         elif t[p] == "3":     #text
             tag = '<text x="ccccc" y="ddddd" font-family="eeeee" font-size="fffff">ggggg</text>'
-            rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff", "ggggg")
+            source += rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff", "ggggg")
         elif t[p] == "4":     #path
             tag = '<path d="ccccc" fill="ddddd"/'
-            rp(tag, p, "ccccc", "ddddd")
+            source += rp(tag, p, "ccccc", "ddddd")
         else:
             break
-    # ------------------------------------------------------------------------------------------------
-    
+            
     # close tag
     source += "</svg>"
     # 書き出し
