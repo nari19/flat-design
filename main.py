@@ -7,11 +7,12 @@ def ip(*args):
     for i in args:
         t += [input(i)]
 
-ip("file name; ", "1:vertical 2:oblong 3:square; ", "background; ", "add new? y/n; ")
+ip("file name; ", "1:vertical 2:oblong 3:square; ", "background; ")
+wr(t)
+ip("add new? y/n; ")
 
 while t[-1] == "y":
     ip("1:rect 2:circle 3:text 4:path; ")
-    print(t)
     if t[-1] == "1":
         # rect
         ip("x= ; ", "y= ; ", "width= ; ", "height= ; ", "fill= ; ")
