@@ -1,4 +1,5 @@
 from write import wr
+from write import csv
 
 t = []
 #複数のinput関数を同時に呼び出す
@@ -33,3 +34,4 @@ while t[-1] == "y":
 
 print(t)
 wr(t)
+# csv(t)

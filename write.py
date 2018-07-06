@@ -1,3 +1,4 @@
+# svgファイル書き出し
 def wr(t):
     file_name = "../" + t[0] + ".svg"
     f = open(file_name, 'w', encoding='utf-8')
@@ -46,5 +47,19 @@ def wr(t):
     source += "</svg>"
     # 書き出し
     f.write(source)
+    f.flush()
+    f.close()
+
+
+# csvファイル書き出し
+def csv(t):
+    file_name = "test.csv"
+    f = open(file_name, 'a', encoding='utf-8')
+    writeCsv = ""
+    for i in t:
+        writeCsv += i + ","
+    # 書き出し
+    print(writeCsv)
+    f.write(t)
     f.flush()
     f.close()

@@ -2,6 +2,8 @@
 # px比率
 # 例外処理
 # ブラウザ確認
+# foreignObject要素 html
+# script, style
 # x = 3
 # y = 5
 
