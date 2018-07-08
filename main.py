@@ -1,4 +1,4 @@
-from write import wr
+from funcs import t_edit
 from write import csv
 
 t = []
@@ -9,7 +9,7 @@ def ip(*args):
         t += [input(i)]
 
 ip("file name; ", "1:vertical 2:oblong 3:square; ", "background; ")
-wr(t)
+t_edit(t)
 ip("add new? y/n; ")
 
 while t[-1] == "y":
@@ -29,9 +29,9 @@ while t[-1] == "y":
     else :
         print("not command!")
         break
-    wr(t)   #要素を追加するごとにファイルを上書き
+    t_edit(t)   #要素を追加するごとにファイルを上書き
     ip("add new? y/n;")
 
 print(t)
-wr(t)
+t_edit(t)
 # csv(t)

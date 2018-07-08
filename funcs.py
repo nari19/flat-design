@@ -1,3 +1,18 @@
+from main import t
+from write import wr
+def t_edit(t):
+    # (tのインデント) = (アルファベットと数字の2文字を抽出する正規表現)
+    # for (条件:)
+    # t[] = t[] * 200 / 10
+    # pixel
+    p1 = x * 200 / 10
+    # color
+    c1 = "#55efc4"
+    c2 = "#81ecec"
+    c3 = "#74b9ff"
+    # font
+
+    wr(t)
 # 配色インデックスカラー
 # px比率
 # 例外処理
@@ -9,6 +24,8 @@
 
 # x1 = "x=" + str(int(x * 200 / 10))
 # y1 = "y=" + str(int(y * 280 / 10))
+# s = int(input("s: "))
+# print(s * 20)
 
 # print(x1)
 # print(y1)

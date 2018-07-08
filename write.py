@@ -17,9 +17,7 @@ def wr(t):
 
     # source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
     def rp(tag, p, *args):
-        # global tag
         for i in args:
-            # a = tag.replace(i, t[p+1])
             p += 1
             tag = tag.replace(i, t[p])
         return tag
