@@ -1,5 +1,6 @@
 # svgファイル書き出し
 def wr(t):
+    # ファイル作成時の設定
     file_name = "../" + t[0] + ".svg"
     f = open(file_name, 'w', encoding='utf-8')
     
@@ -15,11 +16,9 @@ def wr(t):
     # background-color
     source = source.replace("bbbbb", t[2])
 
-    # source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
+    # 複数の置換を関数にして簡潔化→ source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
     def rp(tag, p, *args):
-        # global tag
         for i in args:
-            # a = tag.replace(i, t[p+1])
             p += 1
             tag = tag.replace(i, t[p])
         return tag
