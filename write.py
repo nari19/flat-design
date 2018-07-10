@@ -24,7 +24,7 @@ def wr(t):
 
     # add new
     ty = [u for u, x in enumerate(t) if x == "y"]#add newした時のインデックスを配列化
-    for i in range(len(ty)):
+    for i in range(len(t)):
         p = ty[i] + 1   #タグの種類を指定する時のインデックス
         if t[p] == "1":     #rect
             tag = '<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>'
