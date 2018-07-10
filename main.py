@@ -1,5 +1,5 @@
 from funcs import t_edit
-from write import csv
+# from write import csv
 
 t = []
 #複数のinput関数を同時に呼び出す

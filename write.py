@@ -1,5 +1,6 @@
 # svgファイル書き出し
 def wr(t):
+    # ファイル作成時の設定
     file_name = "../" + t[0] + ".svg"
     f = open(file_name, 'w', encoding='utf-8')
     
@@ -15,7 +16,7 @@ def wr(t):
     # background-color
     source = source.replace("bbbbb", t[2])
 
-    # source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
+    # 複数の置換を関数にして簡潔化→ source += tag.replace("ccccc", t[p+=1]).replace("ddddd", t[p+=1]).replace("eeeee", t[p+=1])
     def rp(tag, p, *args):
         for i in args:
             p += 1
@@ -24,7 +25,7 @@ def wr(t):
 
     # add new
     ty = [u for u, x in enumerate(t) if x == "y"]#add newした時のインデックスを配列化
-    for i in range(len(t)):
+    for i in range(len(ty)):
         p = ty[i] + 1   #タグの種類を指定する時のインデックス
         if t[p] == "1":     #rect
             tag = '<rect x="ccccc" y="ddddd" width="eeeee" height="fffff" fill="ggggg"/>'

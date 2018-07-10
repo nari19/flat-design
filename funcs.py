@@ -1,8 +1,7 @@
-from main import t
 from write import wr
-
-
+# 頻繁に使う色やフォントを簡単な文字列で定義する
 def t_edit(t):
+    # アルファベットと数字のキーを指定して色とフォントの要素を追加する
     cn = {
         'c1': "#55efc4", 'c2': "#81ecec", 'c3': "#74b9ff", 'c4': "#a29bfe", 'c5': "#dfe6e9", 
         'c6': "#00b894", 'c7': "#00cec9", 'c8': "#0984e3", 'c9': "#6c5ce7", 'c10': "#b2bec3",
@@ -11,64 +10,38 @@ def t_edit(t):
     }
     fn = {'f1': "Menlo", 'f2': "Monaco", 'f3': "M+ 1c light", 'f4': "M+ 1plight", 'f5': "Myra 4F Caps Bold"}
     
+    # 選んだ縦横比ごとに10等分した要素を指定 ex.{w1: 30}
     if t[1] == "1":
         w = 20
         h = 28
     elif t[1] == "2":
         w = 36
         h = 20
-    else :
+    else:
         w = 30
         h = 30
-    for i in range(10):
-        sn["s" + i] = w * i
-    print(sn)
-    sn = {s1: "30", s2: "60", s3: "90" }
+    wn = {}
+    for i in range(11):
+        wn["w" + str(i)] = str(w * i)
+    hn = {}
+    for i in range(11):
+        hn["h" + str(i)] = str(h * i)
+
+    # tの配列を事前に定義したキーワードに書き換える
     for i in range(len(t)):
         for k in cn:
             if t[i] == k:
                 t[i] = cn[k]
         for k in fn:
             if t[i] == k:
-                t[i] = sn[k]
-        
-
-    
-
-
+                t[i] = fn[k]
+        for k in wn:
+            if t[i] == k:
+                t[i] = wn[k]
+        for k in hn:
+            if t[i] == k:
+                t[i] = hn[k]
 
     wr(t)
-    # ['hoge', '1', '#33a', 'y', '2', '0', '0', '100', 'red', 'n']
-# a = '5'
-# d = {a: int(a)*30}
-# print(d[a])
-    # (tのインデント) = (アルファベットと数字の2文字を抽出する正規表現)
-    # for (条件:)
-    # t[] = t[] * 200 / 10
-    # pixel
-    # p1 = x * 200 / 10
-    # # color
-    # c1 = "#55efc4"
-    # c2 = "#81ecec"
-    # c3 = "#74b9ff"
-    # font
-
-# 配色インデックスカラー
-# px比率
-# 例外処理
-# ブラウザ確認
-# foreignObject要素 html
-# script, style
-# x = 3
-# y = 5
-
-# x1 = "x=" + str(int(x * 200 / 10))
-# y1 = "y=" + str(int(y * 280 / 10))
-# s = int(input("s: "))
-# print(s * 20)
-
-# print(x1)
-# print(y1)
-
-
+# ['hoge', '1', '#33a', 'y', '2', '0', '0', '100', 'red', 'n']
 # "#55efc4", "#81ecec", "#74b9ff", "#a29bfe", "#dfe6e9", "#00b894", "#00cec9", "#0984e3", "#6c5ce7", "#b2bec3", "#ffeaa7", "#fab1a0", "#ff7675", "#fd79a8", "#636e72", "#fdcb6e", "#e17055", "#d63031", "#e84393", "#2d3436"
