@@ -1,9 +1,16 @@
 from funcs import t_edit
 
+def callback():
+    # ------------------------------
+    # t_temp()# funcs.py定義したインデックスカラーをsvgに書き出す
+    cross_square()# 斜めに正方形を並べる
+
+
+    # -------------------------------    
 
 # funcs.py定義したインデックスカラーをsvgに書き出す
 def t_temp():
-    t = ['template2', '3', '#fff']
+    t = ['template', '3', '#fff']
     x = 1
     for i in range(10):
         for k in range(10):
@@ -15,7 +22,7 @@ def t_temp():
 
 # 斜めに正方形を並べる
 def cross_square():
-    t = ['cross_square', '3', '#fff']
+    t = ['cross_square2', '3', '#fff']
     x = 1
     for i in range(10):
         t += ['y', '1', 'w'+str(i), 'h'+str(i), 'w1', 'h1', 'c'+str(x)]
@@ -24,12 +31,6 @@ def cross_square():
     t += ['n']
     t_edit(t)
 
+callback()
 
 
-
-# ------------------------------
-# t_temp()
-cross_square()
-
-
-# -------------------------------

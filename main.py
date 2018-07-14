@@ -1,6 +1,16 @@
 from funcs import t_edit
-from funcs import t_temp
-# from write import csv
+"""
+.
+├── README.md
+├── __pycache__
+├── main.py
+|
+├── main2.py
+|
+├── funcs.py
+|
+└── write.py
+"""
 
 t = []
 #複数のinput関数を同時に呼び出す
@@ -35,5 +45,4 @@ while t[-1] == "y":
 
 print(t)
 t_edit(t)
-t_temp()
 # csv(t)
