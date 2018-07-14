@@ -48,14 +48,4 @@ def t_edit(t):
 # 標準入力を正しい値が出るまで繰り返す
 # https://qiita.com/u1and0/items/66a72fef8bc0a7ce5eda
 
-# 上で定義したインデックスカラーをsvgに書き出す
-def t_temp():
-    t = ['template', '3', '#fff']
-    x = 1
-    for i in range(10):
-        for k in range(10):
-            t += ['y', '1', 'w'+str(k), 'h'+str(i), 'w1', 'h1', 'c'+str(x)]
-            x += 1
 
-    t += ['n']
-    t_edit(t)
