@@ -1,4 +1,5 @@
 from funcs import t_edit
+from funcs import t_temp
 # from write import csv
 
 t = []
@@ -22,7 +23,7 @@ while t[-1] == "y":
         ip("cx= ; ", "cy= ; ", "r= ; ", "fill= ; ")
     elif t[-1] == "3":
         # text
-        ip("text ; ", "x= ; ", "y= ; ", "font-family= ; ", "font-size= ; ")
+        ip("text ; ", "x= ; ", "y= ; ", "font-family= ; ", "font-size= ;", "fill= ;")
     elif t[-1] == "4":
         # path
         ip("d= ; ", "fill= ; ")
@@ -34,4 +35,5 @@ while t[-1] == "y":
 
 print(t)
 t_edit(t)
+t_temp()
 # csv(t)
