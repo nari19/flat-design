@@ -6,7 +6,8 @@ main2.py  →エディタ操作で生成
 """
 def callback():
     # ------------------------------
-    temp_color()# funcs.py定義したインデックスカラーをsvgに書き出す
+    # temp_color()# funcs.py定義したインデックスカラーをsvgに書き出す
+    temp_font()# funcs.py定義したフォントをsvgに書き出す
     # cross_square()# 斜めに正方形を並べる
 
 
@@ -14,7 +15,7 @@ def callback():
 
 # funcs.py定義したインデックスカラーをsvgに書き出す
 def temp_color():
-    t = ['template', '3', '#fff']
+    t = ['temp_color', '3', '#fff']
     x = 1
     # 色を並べる
     for i in range(10):
@@ -31,9 +32,15 @@ def temp_color():
     t += ['n']
     t_edit(t)
 
-
+# funcs.py定義したフォントの種類をsvgに書き出す
 def temp_font():
-    t = 
+    # ip("text ; ", "x= ; ", "y= ; ", "font-family= ; ", "font-size= ;", "fill= ;")
+    t = ['temp_font', '1', '#fff']
+    for i in range(10):
+            t += ['y', '3','c'+str(i+1)+' text-sample テキストサンプル', 'w1', 'h'+str(i+1), 'f'+str(i+1), '10', '#2d3436']
+
+    t += ['n']
+    t_edit(t)
 
 
 # 斜めに正方形を並べる
