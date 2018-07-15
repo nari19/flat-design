@@ -1,6 +1,6 @@
 from funcs import t_edit
 """
- main.py  →コンソールでの対話入力で生成
+ main.py  →(ターミナルでの対話入力で生成)
     └── funcs.py
             └── write.py
 """

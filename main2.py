@@ -1,17 +1,17 @@
 from funcs import t_edit
 """
-main2.py  →エディタ操作で生成
+main2.py  →(エディタ操作で生成)
     └── funcs.py
             └── write.py
 """
-def callback():
-    # ------------------------------
-    # temp_color()# funcs.py定義したインデックスカラーをsvgに書き出す
-    temp_font()# funcs.py定義したフォントをsvgに書き出す
+def callback():# 関数の前方参照を行う
+    # ------------------------------------------------------------
+    # temp_color()# funcs.pyで定義したインデックスカラーをsvgに書き出す
+    temp_font()# funcs.pyで定義したフォントをsvgに書き出す
     # cross_square()# 斜めに正方形を並べる
 
 
-    # -------------------------------    
+    # -------------------------------------------------------------
 
 # funcs.py定義したインデックスカラーをsvgに書き出す
 def temp_color():
