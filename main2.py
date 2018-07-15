@@ -13,7 +13,7 @@ def callback():# 関数の前方参照を行う
 
     # -------------------------------------------------------------
 
-# funcs.py定義したインデックスカラーをsvgに書き出す
+# funcs.pyで定義したインデックスカラーをsvgに書き出す
 def temp_color():
     t = ['temp_color', '3', '#fff']
     x = 1
@@ -26,19 +26,24 @@ def temp_color():
     x = 1
     for i in range(10):
         for k in range(10):
-            t += ['y', '3', str(x), 'w'+str(k), 'h'+str(i+1), 'f1', '7', '#2d3436']
+            t += ['y', '3', ' c'+str(x), 'w'+str(k), 'h'+str(i+1), 'f1', '7', '#2d3436']
+                          #  ↑cnがfuncs.pyで変換されないように空白を空ける
             x += 1
-
     t += ['n']
     t_edit(t)
 
-# funcs.py定義したフォントの種類をsvgに書き出す
+
+# funcs.pyで定義したフォントの種類をsvgに書き出す
 def temp_font():
     # ip("text ; ", "x= ; ", "y= ; ", "font-family= ; ", "font-size= ;", "fill= ;")
     t = ['temp_font', '1', '#fff']
+    h = 18
     for i in range(10):
-            t += ['y', '3','c'+str(i+1)+' text-sample テキストサンプル', 'w1', 'h'+str(i+1), 'f'+str(i+1), '10', '#2d3436']
-
+            # フォントの種類を記述
+            t += ['y', '3','f'+str(i+1), 'w1', str(h), 'f'+str(i+1), '7', '#00cec9']
+            # 'sample-text'と文字を記述
+            t += ['y', '3','f'+str(i+1)+' text-sample テキストサンプル', 'w1', 'h'+str(i+1), 'f'+str(i+1), '10', '#2d3436']
+            h += 28
     t += ['n']
     t_edit(t)
 
@@ -50,10 +55,11 @@ def cross_square():
     for i in range(10):
         t += ['y', '1', 'w'+str(i), 'h'+str(i), 'w1', 'h1', 'c'+str(x)]
         x += 1
-
     t += ['n']
     t_edit(t)
 
+
+# 関数の前方参照を行う(一番下に置く)
 callback()
 
 

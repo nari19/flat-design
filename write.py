@@ -1,9 +1,9 @@
 # svgファイル書き出し
 def wr(t):
+    # ---------------------------------------------------------------------------------------------
     # ファイル作成時の設定
     file_name = "../" + t[0] + ".svg"
     f = open(file_name, 'w', encoding='utf-8')
-    
     # template
     source = '<?xml version="1.0" encoding="utf-8" ?><svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" baseProfile="full" version="1.1" viewBox="aaaaa"><rect width="100%" height="100%" fill="bbbbb"/>'
     # ratio
@@ -13,6 +13,7 @@ def wr(t):
         source = source.replace("aaaaa", "0 0 360 200")
     else:
         source = source.replace("aaaaa", "0 0 300 300")
+    # ---------------------------------------------------------------------------------------------
     # background-color
     source = source.replace("bbbbb", t[2])
 
