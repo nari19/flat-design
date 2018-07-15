@@ -34,8 +34,8 @@ def wr(t):
             tag = '<circle cx="ccccc" cy="ddddd" r="eeeee" fill="fffff" />'
             source += rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff")
         elif t[p] == "3":     #text
-            tag = '<text x="ddddd" y="eeeee" font-family="fffff" font-size="ggggg">ccccc</text>'
-            source += rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff", "ggggg")
+            tag = '<text x="ddddd" y="eeeee" font-family="fffff" font-size="ggggg" fill="hhhhh">ccccc</text>'
+            source += rp(tag, p, "ccccc", "ddddd", "eeeee", "fffff", "ggggg", "hhhhh")
         elif t[p] == "4":     #path
             tag = '<path d="ccccc" fill="ddddd"/'
             source += rp(tag, p, "ccccc", "ddddd")

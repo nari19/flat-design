@@ -3,12 +3,12 @@ from funcs import t_edit
 .
 ├── README.md
 ├── __pycache__
-├── main.py
-|
-├── main2.py
-|
+│   ├── funcs.cpython-36.pyc
+│   ├── main.cpython-36.pyc
+│   └── write.cpython-36.pyc
 ├── funcs.py
-|
+├── main.py
+├── main2.py
 └── write.py
 """
 
