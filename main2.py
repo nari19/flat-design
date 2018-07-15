@@ -1,5 +1,9 @@
 from funcs import t_edit
-
+"""
+main2.py  →エディタ操作で生成
+    └── funcs.py
+            └── write.py
+"""
 def callback():
     # ------------------------------
     temp_color()# funcs.py定義したインデックスカラーをsvgに書き出す
@@ -26,6 +30,11 @@ def temp_color():
 
     t += ['n']
     t_edit(t)
+
+
+def temp_font():
+    t = 
+
 
 # 斜めに正方形を並べる
 def cross_square():

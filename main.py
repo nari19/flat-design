@@ -1,15 +1,8 @@
 from funcs import t_edit
 """
-.
-├── README.md
-├── __pycache__
-│   ├── funcs.cpython-36.pyc
-│   ├── main.cpython-36.pyc
-│   └── write.cpython-36.pyc
-├── funcs.py
-├── main.py
-├── main2.py
-└── write.py
+ main.py  →コンソールでの対話入力で生成
+    └── funcs.py
+            └── write.py
 """
 
 t = []
