@@ -6,12 +6,25 @@ main2.py  →(エディタ操作で生成)
 """
 def callback():# 関数の前方参照を行う
     # ------------------------------------------------------------
+    normal()# 配列をターミナル以外でそのまま定義
     # temp_color()# funcs.pyで定義したインデックスカラーをsvgに書き出す
-    temp_font()# funcs.pyで定義したフォントをsvgに書き出す
+    # temp_font()# funcs.pyで定義したフォントをsvgに書き出す
     # cross_square()# 斜めに正方形を並べる
 
 
     # -------------------------------------------------------------
+
+# 配列をターミナル以外でそのまま定義
+def normal():
+    t = ['noraml', '1', '#fff']
+    # rect "1"   ("x= ; ", "y= ; ", "width= ; ", "height= ; ", "fill= ; ")
+    # circle "2" ("cx= ; ", "cy= ; ", "r= ; ", "fill= ; ")
+    # text "3"   ("text ; ", "x= ; ", "y= ; ", "font-family= ; ", "font-size= ;", "fill= ;")
+    # path "4"   ("d= ; ", "fill= ; ")
+    t += ['y', '3','text', 'w1', 'h1', 'f1', '7', '#00cec9']
+    t += ['n']
+    t_edit(t)
+
 
 # funcs.pyで定義したインデックスカラーをsvgに書き出す
 def temp_color():
