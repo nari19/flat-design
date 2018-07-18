@@ -7,8 +7,8 @@ main2.py  →(エディタ操作で生成)
 def callback():# 関数の前方参照を行う
     # ------------------------------------------------------------
     normal()# 配列をターミナル以外でそのまま定義
-    # temp_color()# funcs.pyで定義したインデックスカラーをsvgに書き出す
-    # temp_font()# funcs.pyで定義したフォントをsvgに書き出す
+    # temp_color()# funcs.pyで定義したインデックスカラーを書き出す
+    # temp_font()# funcs.pyで定義したフォントを書き出す
     # cross_square()# 斜めに正方形を並べる
 
 
@@ -26,7 +26,7 @@ def normal():
     t_edit(t)
 
 
-# funcs.pyで定義したインデックスカラーをsvgに書き出す
+# funcs.pyで定義したインデックスカラーを書き出す
 def temp_color():
     t = ['temp_color', '3', '#fff']
     x = 1
@@ -46,7 +46,7 @@ def temp_color():
     t_edit(t)
 
 
-# funcs.pyで定義したフォントの種類をsvgに書き出す
+# funcs.pyで定義したフォントの種類を書き出す
 def temp_font():
     # ip("text ; ", "x= ; ", "y= ; ", "font-family= ; ", "font-size= ;", "fill= ;")
     t = ['temp_font', '1', '#fff']
