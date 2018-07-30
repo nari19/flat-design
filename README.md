@@ -64,6 +64,8 @@ $ python main.py
 またそれぞれの属性では、インデックスカラーのように
 事前に定義した値を指定することができます。(funcs.py に記述)
 
+![funcs.py](https://github.com/nari19/python-svg-generator/blob/master/images/Screen Shot 2018-07-30 at 8.35.46.png "funcs.py")
+
 |              | 1            |     2        |     3        |     4        |
 |:------------:|:------------:|:------------:|:------------:|:------------:|
 |  インデックス  |rect|circle|text|path|
