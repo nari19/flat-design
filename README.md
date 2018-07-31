@@ -54,8 +54,8 @@ $ python main.py
 ||-|n(No)を入力|
 ||-|終了|
 
-上記では、1,2,3の基本設定を行った後、
-4種類の要素いずれかを指定します。
+上記では、1,2,3の基本設定を行った後、add new?が聞かれ、y(Yes)を入力すると
+4種類の要素いずれかを指定することができます。
 "add new?"で"n"を入力するまで5,6,7の
 要素の追加、またその属性の入力を
 繰り返します。
@@ -64,7 +64,8 @@ $ python main.py
 またそれぞれの属性では、インデックスカラーのように
 事前に定義した値を指定することができます。(funcs.py に記述)
 
-![funcs.py](https://github.com/nari19/python-svg-generator/blob/master/images/Screen Shot 2018-07-30 at 8.35.46.png "funcs.py")
+![funcs.py](https://github.com/nari19/python-svg-generator/blob/master/images/8.35.46.png "funcs.py")
+
 
 |              | 1            |     2        |     3        |     4        |
 |:------------:|:------------:|:------------:|:------------:|:------------:|
@@ -78,7 +79,8 @@ $ python main.py
 |wn, hn|||font-size= ;|
 |cn|fill= ;|fill= ;|fill= ;|fill= ;|
 
-
+wn,hnはそれぞれ、縦、横を10等分した値を指定することができます。
+ex) w2 → 横幅2/10の値
 
 
 ### 2.エディタ操作で生成
