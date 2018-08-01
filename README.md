@@ -94,7 +94,10 @@ $ python main2.py
 
 
 <img src="/images/ 6.44.15.png" alt="main2.py" width="400">
-<img src="/images/temp_color.svg" alt="temp_color" width="250"> <img src="/images/temp_font.svg" alt="temp_font" width="250"> <img src="/images/cross_square.svg" alt="cross_square" width="250">
+
+||||
+|---|---|---|
+|<img src="/images/temp_color.svg" alt="temp_color" width="250">|<img src="/images/temp_font.svg" alt="temp_font" width="250">|<img src="/images/cross_square.svg" alt="cross_square" width="250">|
 
 ↑main.pyで呼び出せる色やフォントを確認できます。(funcs.pyで編集すれば内容が更新されます。)
 
