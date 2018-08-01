@@ -66,8 +66,7 @@ $ python main.py
 またそれぞれの属性では、インデックスカラーのように
 事前に定義した値を指定することができます。(funcs.py に記述)
 
-![funcs.py](https://github.com/nari19/python-svg-generator/blob/master/images/8.35.46.png "funcs.py")
-<img src="/images/8.35.46.png" alt="funcs.py" width="250">
+<img src="/images/8.35.46.png" alt="funcs.py" width="400">
 
 
 |              | 1            |     2        |     3        |     4        |
@@ -94,7 +93,7 @@ $ python main2.py
 コメントアウトを外して、関数を呼び出すと、次のようなsvg画像が作成されます。
 
 
-<img src="/images/ 6.44.15.png" alt="main2.py" width="350">
+<img src="/images/ 6.44.15.png" alt="main2.py" width="400">
 <img src="/images/temp_color.svg" alt="temp_color" width="250"> <img src="/images/temp_font.svg" alt="temp_font" width="250"> <img src="/images/cross_square.svg" alt="cross_square" width="250">
 
 ↑main.pyで呼び出せる色やフォントを確認できます。(funcs.pyで編集すれば内容が更新されます。)
