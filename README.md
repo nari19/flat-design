@@ -58,6 +58,7 @@ $ python main.py
 
 上記では、1,2,3の基本設定を行った後、add new?が聞かれ、y(Yes)を入力すると
 4種類の要素いずれかを指定することができます。
+
 "add new?"で"n"を入力するまで5,6,7の
 要素の追加、またその属性の入力を
 繰り返します。
@@ -82,6 +83,7 @@ $ python main.py
 |cn|fill= ;|fill= ;|fill= ;|fill= ;|
 
 wn,hnはそれぞれ、縦、横を10等分した値を指定することができます。
+
 ex) w2 → 横幅2/10の値
 
 
@@ -95,7 +97,7 @@ $ python main2.py
 
 <img src="/images/ 6.44.15.png" alt="main2.py" width="400">
 
-||||
+|temp_color|temp_font|cross_square|
 |---|---|---|
 |<img src="/images/temp_color.svg" alt="temp_color" width="250">|<img src="/images/temp_font.svg" alt="temp_font" width="250">|<img src="/images/cross_square.svg" alt="cross_square" width="250">|
 
@@ -103,6 +105,7 @@ $ python main2.py
 
 このプログラムでSVGを作成するには以下のように書きます。
 (具体的な説明は省略します)
+
 例）斜めに正方形を並べる
 
 ``` py
