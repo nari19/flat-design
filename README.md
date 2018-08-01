@@ -7,6 +7,8 @@ svgの基礎的な知識がある方が使うことを前提にして作成し�
 主にsvgタグは選択することで、その属性は簡単な文字列を指定することで
 出力できるようにしています。
 
+カレントディレクトリから一つ上の階層に画像が生成されます。
+
 
 ## ファイル構成
     .
@@ -88,4 +90,24 @@ ex) w2 → 横幅2/10の値
 $ python main2.py
 ```
 
+コメントアウトを外して、関数を呼び出すと、次のようなsvg画像が作成されます。
 
+![funcs.py](https://github.com/nari19/python-svg-generator/blob/master/images/temp_color.svg "funcs.py")
+![funcs.py](https://github.com/nari19/python-svg-generator/blob/master/images/temp_font.svg "funcs.py")
+![funcs.py](https://github.com/nari19/python-svg-generator/blob/master/images/cross_square.svg "funcs.py")
+
+このプログラムでSVGを作成するには以下のように書きます。
+(具体的な説明は省略します)
+例）斜めに正方形を並べる
+
+``` py
+# main2.py
+def cross_square():
+    t = ['cross_square2', '3', '#fff']
+    x = 1
+    for i in range(10):
+        t += ['y', '1', 'w'+str(i), 'h'+str(i), 'w1', 'h1', 'c'+str(x)]
+        x += 1
+    t += ['n']
+    t_edit(t)
+```
